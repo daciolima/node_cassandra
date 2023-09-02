@@ -1,0 +1,16 @@
+{
+  "name": "cassandra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Dacio Lima <contato.dacio@gmail.com> (https://www.daciolima.dev.br/)",
+  "license": "MIT",
+  "dependencies": {
+    "cassandra-driver": "^4.6.4",
+    "dotenv": "^16.3.1"
+  }
+}
