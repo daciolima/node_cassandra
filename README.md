@@ -28,7 +28,7 @@ CREATE TABLE mybusiness.company (company_id uuid, name TEXT, street TEXT, number
 ```
 
 **Script python para gerar dados fake em arquivo CSV**
-Instalação da biblioteca Fake é necessária.
+-   Instalação da biblioteca Fake é necessária.
 ```python 
 pip install fake
 ```
