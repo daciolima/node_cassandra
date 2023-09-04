@@ -1,4 +1,6 @@
-..gitignore.un~
+*.un~
+*.~
 .DS_Store
 
 node_modules
+

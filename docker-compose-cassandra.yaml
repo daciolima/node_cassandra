@@ -1,0 +1,17 @@
+# Use root/root as user/password credentials
+version: '3.1'
+
+services:
+  db:
+    image: cassandra:4.1.3
+    ports:
+      - "9042:9042"
+    restart: always 
+    container_name: db_cassandra_4_1_3
+    volumes:
+      - ./cassandra_data:/var/lib/cassandra
+
+    environment:
+      CASSANDRA_USER: cassandra
+      CASSANDRA_PASSWORD: cassandra
+      CASSANDRA_CLUSTER_NAME: clustercassandra
