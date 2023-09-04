@@ -73,6 +73,7 @@ COPY mybusiness.company(company_id, name, street, number, city, state, postcode,
 ```
 
 **Projeção teste dos dados inseridos**
+```python 
 SELECT * FROM mybusiness.company;
 ```
 
