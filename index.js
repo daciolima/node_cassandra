@@ -3,7 +3,10 @@ import {Client} from "cassandra-driver"
 
 dotenv.config()
 
-/* Configuração com banco de dados Cassandra local*/
+/* 
+Configuração com banco de dados Cassandra local
+OBS: Criar arquivo .env na raiz do projeto com as constantes de acesso e seus respectivos valores.
+*/
 
 const cassandraConfig = {
     credentials: {
