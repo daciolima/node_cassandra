@@ -36,3 +36,19 @@ const consultaTeste = async () => {
 
 const resultFinal = await consultaTeste();
 console.log(resultFinal);
+
+
+const consultaCompany = async () => {
+    await clientCassandra.connect();
+    // const consultaCQL = 'SELECT * FROM system.local';
+    // const consultaCQL = 'SELECT * FROM system_schema.keyspaces';
+    // const consultaCQL = 'DESCRIBE mybusiness';
+    const consultaCQL = 'SELECT * mybusiness.company';
+
+    const consultaCompany = await clientCassandra.execute(consultaCQL);
+    await clientCassandra.shutdown();
+    return consultaCompany;
+};
+
+const resultCompany = await consultaCompany();
+console.log(resultCompany);
